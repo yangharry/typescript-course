@@ -1,21 +1,16 @@
 class Car {
   mileage = 0;
   price = 100;
-  color = 'white'
-  
-  drive(){
-    return 'drive!'
+  color = 'white';
+
+  drive() {
+    return 'drive!';
   }
 
-  breke(){
-    return 'break!'
+  breke() {
+    return 'break!';
   }
-
 }
-class Ford extends Car {
-
-}
+class Ford extends Car {}
 
 const myFordCar = new Ford();
-
-myFordCar.
