@@ -8,7 +8,23 @@
     "moduleResolution": "Node",
     "esModuleInterop": true, // ES Module, CommonJS 호환해서 사용가능
     "lib": ["ESNext", "DOM"], // 컴파일 과정에서 사용하는 라이브러리 지정
-    "strict": true // 타입스크립트 파일에 타입을 엄격하게 사용한다고 명시
+    "strict": true, // 타입스크립트 파일에 타입을 엄격하게 사용한다고 명시
+    // -------------------------------------   strict: true 시  -----------------------------------
+    // "noImplicitAny": true, // 명시적이지 않은 any 유형으로 표현식 및 선언 사용 시 오류 발생
+    // "strictNullChecks": true, // 엄격한 null 검사 사용
+    // "strictFunctionTypes": true, // 엄격한 함수 유형 검사 사용
+    // "strictBindCallApply": true, // 엄격한 bind call apply 함수 메서드 사용
+    // "strictPropertyInitialization": true, // 클래스에서 속성 초기화 엄격 검사 사용
+    // "noImplicitThis": true, //명시적이지 않은 any 유형으로  this 표현식 사용 시 오류 발생
+    "alwaysStrict": false, // 엄격모드에서 구문 분석 후, 각 소스 파일에 use strict 코드 출럭
+    // -------------------------------------   strict: true 시  -----------------------------------
+    // "baseUrl": "./",
+    // "isolatedModules": true,
+    "removeComments": true, // 컴파일시 주석제거
+    "allowJs": true, // js 사용
+    "checkJs": true, // js 파일 타입 체크 or //@ts-check
+    "forceConsistentCasingInFileNames": true, // 파일의 이름을 대소문자 판별
+    "declaration": true // d.ts 선언 파일 생성
   },
   "include": [
     // 소스 파일의 어디에서 타입스크립트 파일을 찾을 수 있는지 명시
